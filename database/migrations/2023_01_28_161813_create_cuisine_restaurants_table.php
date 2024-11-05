@@ -13,7 +13,7 @@ class CreateCuisineRestaurantsTable extends Migration
      */
     public function up()
     {
-        Schema::create('cuisine_restaurant', function (Blueprint $table) {
+        Schema::create('cuisine_restaurants', function (Blueprint $table) {
             $table->id();
             $table->foreignId('restaurant_id');
             $table->foreignId('cuisine_id');
