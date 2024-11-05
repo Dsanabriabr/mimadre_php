@@ -13,7 +13,7 @@ class CreateFoodTagsTable extends Migration
      */
     public function up()
     {
-        Schema::create('food_tag', function (Blueprint $table) {
+        Schema::create('food_tags', function (Blueprint $table) {
             $table->id();
             $table->foreignId('food_id');
             $table->foreignId('tag_id');
