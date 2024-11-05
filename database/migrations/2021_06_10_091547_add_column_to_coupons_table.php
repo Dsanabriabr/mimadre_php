@@ -14,7 +14,6 @@ class AddColumnToCouponsTable extends Migration
     public function up()
     {
         Schema::table('coupons', function (Blueprint $table) {
-            $table->removeColumn('restaurant_id');
             $table->string('data')->nullable();
         });
     }
@@ -27,7 +26,6 @@ class AddColumnToCouponsTable extends Migration
     public function down()
     {
         Schema::table('coupons', function (Blueprint $table) {
-            $table->foreignId('restaurant_id');
             $table->removeColumn('data');
         });
     }
