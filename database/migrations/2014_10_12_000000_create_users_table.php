@@ -24,7 +24,6 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password',100);
             $table->string('email_verification_token')->nullable();
-            $table->string('cm_firebase_token')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
