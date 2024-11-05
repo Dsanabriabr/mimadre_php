@@ -17,9 +17,6 @@ class AddCustomerIdColToCouponsTable extends Migration
             $table->string('created_by',50)->default('admin')->nullable();
             $table->string('customer_id')->default(json_encode(['all']))->nullable();
             $table->string('slug',255)->nullable();
-            $table->foreignId('restaurant_id')->nullable();
-
-
         });
     }
 
@@ -34,7 +31,6 @@ class AddCustomerIdColToCouponsTable extends Migration
             $table->dropColumn('created_by');
             $table->dropColumn('slug');
             $table->dropColumn('customer_id');
-            $table->dropColumn('restaurant_id');
         });
     }
 }
