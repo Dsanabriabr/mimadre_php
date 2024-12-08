@@ -107,7 +107,7 @@
                                             <i class="tio-info-outined"></i>
                                         </span>
                                     </label>
-                                    <input id="name{{$lang}}" type="text" name="name[]" maxlength="20"  value="{{ $translate[$lang]['feature_name']??'' }}" class="form-control" placeholder="{{translate('messages.name_here...')}}">
+                                    <input id="name{{$lang}}" type="text" name="name[]" maxlength="30"  value="{{ $translate[$lang]['feature_name']??'' }}" class="form-control" placeholder="{{translate('messages.name_here...')}}">
                                 </div>
                                 <div class="col-12">
                                     <label for="description{{$lang}}" class="form-label">{{translate('messages.Short_Description')}} ({{strtoupper($lang)}})
@@ -115,7 +115,7 @@
                                             <i class="tio-info-outined"></i>
                                         </span>
                                     </label>
-                                        <textarea id="description{{$lang}}" name="description[]" maxlength="60" placeholder="{{translate('Very_Good_Company')}}" class="form-control h92px">{{ $translate[$lang]['feature_description']??'' }}</textarea>
+                                        <textarea id="description{{$lang}}" name="description[]" maxlength="150" placeholder="{{translate('Very_Good_Company')}}" class="form-control h92px">{{ $translate[$lang]['feature_description']??'' }}</textarea>
                                     </div>
                             </div>
                         </div>
