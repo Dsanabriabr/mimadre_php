@@ -28,7 +28,7 @@
                     <br>
                     <div class="img-data-1">
                         <img src="{{dynamicAsset('/public/assets/landing/assets_new/img/banner/icon-1.png')}}" alt="Review">
-                        <span>Comidas típicas Bolívianas</span>
+                        <span>Comidas típicas da Bolívia</span>
                     </div>
                     <div class="img-data-2">
                         <img src="{{dynamicAsset('/public/assets/landing/assets_new/img/banner/icon-2.png')}}" alt="Order">
