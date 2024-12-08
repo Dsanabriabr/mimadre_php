@@ -248,7 +248,7 @@ if (!function_exists('dynamicStorage')) {
     function dynamicStorage(string $directory): string
     {
         if (DOMAIN_POINTED_DIRECTORY == 'public') {
-            $result = str_replace('storage/app/public', 'storage', $directory);
+            $result = str_replace('storage/app/public', 'storage/app', $directory);
         } else {
             $result = $directory;
         }
